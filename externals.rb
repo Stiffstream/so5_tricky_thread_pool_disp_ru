@@ -12,7 +12,7 @@ MxxRu::arch_externals :clara do |e|
 end
 
 MxxRu::arch_externals :fmt do |e|
-  e.url 'https://github.com/fmtlib/fmt/archive/5.3.0.zip'
+  e.url 'https://github.com/fmtlib/fmt/archive/8.1.1.zip'
 
   e.map_dir 'include' => 'dev/fmt'
   e.map_dir 'src' => 'dev/fmt'
