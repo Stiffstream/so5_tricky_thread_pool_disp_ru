@@ -13,9 +13,25 @@
 Для экспериментов потребуется С++ компилятор с поддержкой C++17 (проверялось
 на gcc-7.3 и vc++ 15.6).
 
-Для компиляции потребуется Ruby и MxxRu. Если кому-то нужен вариант, который
-можно скомпилировать посредством CMake, то оформите, пожалуйста, issue
-в соответствующем [разделе](https://github.com/Stiffstream/so5_tricky_thread_pool_disp_ru/issues).
+Для компиляции потребуется CMake или Ruby+MxxRu.
+
+## Компиляция с помощью CMake
+
+Для компиляции с помощью CMake нужно загрузить архив с именем вида `so5_tricky_thread_pool_disp_ru-*-full.zip` из секции [Releases](https://github.com/Stiffstream/so5_tricky_thread_pool_disp_ru/releases). После чего:
+
+```sh
+unzip so5_tricky_thread_pool_disp_ru-202204220800-full.zip
+cd so5_tricky_thread_pool_disp_ru/dev
+mkdir cmake_build
+cd cmake_build
+cmake ..
+cmake --build . --config Release
+```
+
+Скомпилированные примеры должны оказаться внутри подкаталога `bin`.
+
+**Примечание.** Поддержка CMake была добавлена 2022.04, в более старых версиях примера сборка с помощью CMake не предусмотрена.
+
 ## Компиляция с помощью MxxRu
 Для компиляции с помощью MxxRu потребуется Ruby и RubyGems (как правило, RubyGems устанавливается вместе с Ruby, но если это не так, то RubyGems нужно поставить явно). Для установки MxxRu нужно выполнить команду:
 
